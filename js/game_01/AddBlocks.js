@@ -1,6 +1,7 @@
-
+index = 0;
 var filling = false;
 var completed = false;
+var next = false;
 class AddBlocks extends Phaser.Scene {
 
     constructor() {
@@ -14,7 +15,7 @@ class AddBlocks extends Phaser.Scene {
         this.load.image('speaker_big', "../../image/img_game_01/speaker_big_1.png");
         this.load.image('speaker_small', "../../image/img_game_01/speaker_big_1.png");
         this.load.image('block_foot', "../../image/img_game_01/85.png");
-        this.load.image('box', "../../image/img_game_01/box.png");
+        this.load.image('box', "../../image/img_game_01/boxUnselected.png");
         this.load.image('img_01', "../../image/img_game_01/img_01.png");
 
     }
@@ -68,17 +69,14 @@ class AddBlocks extends Phaser.Scene {
             this.ball_left.x += 3;
             if (this.ball_left.x >= (config.width + 470) / 2 - 20 - n_pass_exs * 23) {
                 this.ball_left.x = (config.width + 470) / 2 - 20 - n_pass_exs * 23;
+                next = true;
+                completed = false;
             }
         }
-        //if (completed & ) {
-            
-        //    n_pass_exs++;
-        //    index++;
-        //    //chuyen sang bai tiep theo
-        //    if (index < exs.length) {
-        //        this.Scene.start("AddBlocks");
-        //    }
-        //}
+        if (next) {
+            n_pass_exs++;
+            this.scene.start('SubtractBlocks');
+        }
     }
 
     startDragMouse(pointer) {
@@ -162,7 +160,7 @@ class AddBlocks extends Phaser.Scene {
                 fill: "black"
             });
             this.input.keyboard.off('keyup', this.check_ans, this);
-            //sang bai tiep
+            //Hoan thanh bai
             completed = true;
         } else if (0 <= event.key && event.key <= 9) {
             this.box_ans = this.add.image(510, 170, 'box');

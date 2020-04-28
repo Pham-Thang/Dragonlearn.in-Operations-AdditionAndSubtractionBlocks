@@ -5,13 +5,14 @@ var config = {
     backgroundColor: 0xffffff,
     x: 100,
     y: 50,
+    boder: 1,
     physic: {
         default: 'arcade',
         arcade: {
             y: 200
         }
     },
-    scene: [ AddBlocks ]
+    scene: [AddBlocks, SubtractBlocks],
 };
 
 var game = new Phaser.Game(config);
@@ -22,6 +23,10 @@ var n_pass_exs = 1;
 var ex;
 var n_blocks = 0;
 var index = 0;
+var my_font = {
+    font: "40px Arial",
+    fill: "black"
+};
 
 var exs = [
     {
@@ -29,7 +34,7 @@ var exs = [
         operator_2: 2,
     },
     {
-        operator_1: 5,
+        operator_1: 8,
         operator_2: 3,
     },
 

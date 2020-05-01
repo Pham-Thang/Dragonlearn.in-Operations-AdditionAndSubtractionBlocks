@@ -1,0 +1,100 @@
+* {
+	font-family: 'PT Sans';
+}
+
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+    display: block;
+}
+
+.bg-Game {
+
+}
+
+.uchiru-box {
+	z-index: 0;
+	position: relative;
+	margin: 15px auto 20px;
+	width: 960px;
+	min-height: 600px;
+	border-radius: 15px;
+	background: #FFFFFF;
+	border: 2px solid black;
+}
+
+body .uchiru-head-card {
+    line-height: 49px;
+    position: relative;
+    padding: 0 20px;
+}
+
+.back-link {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.beads-wrapper {
+    font-size: 14px;
+    text-align: center;
+    margin-top: -54px;
+    padding: 0 80px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+}
+
+.inner-progress {
+    margin: 0 auto;
+    width: 465px;
+    height: 26px;
+    border-radius: 16px;
+    background: #EDEDED;
+    box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.22), inset 0px 1px 3px 0px rgba(0,0,0,0.18);
+    position: relative;
+}
+
+body .card-content {
+    padding: 4px 0;
+}
+
+.uchiru-place {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 1px;
+    margin-top: -1px;
+    line-height: 1.5;
+}
+
+.uchiru-place.fixed {
+    width: 960px;
+    min-height: 483px;
+}
+
+.title {
+    line-height: 45px;
+    font-size: 45px;
+}
+
+.line-with-objects {
+    position: relative;
+}
+
+.balloons-holder {
+    height: 120px;
+    margin: 46px 0 30px;
+}
+
+.plate {
+    position: relative;
+    display: inline-block;
+    width: 420px;
+    height: 100px;
+    margin: 10px 15px;
+    border-radius: 10px;
+    background-image: linear-gradient(-180deg,#f8f8f8 0,#e8e8e8 100%);
+    box-shadow: 0 1px 2px 0 rgba(42,7,7,.36), 0 2px 4px 0 rgba(55,12,12,.18), 0 2px 12px 0 rgba(0,0,0,.15);
+}

@@ -1,5 +1,5 @@
 * {
-	font-family: 'PT Sans';
+	font-family: 'Arial';
 }
 
 * {
@@ -91,11 +91,21 @@ body .card-content {
 
 .line-with-objects {
     position: relative;
+    height: 100px;
+    margin: 56px 0 40px;
+    padding-top: 0;
 }
 
-.balloons-holder {
-    height: 120px;
-    margin: 46px 0 30px;
+.example {
+    line-height: 90px;
+    font-size: 85px;
+}
+
+.exp {
+    display: inline-block;
+    padding-top: 5px;
+    position: relative;
+    text-align: center;
 }
 
 
@@ -116,7 +126,7 @@ body .card-content {
     top: 30px;
     width: 44px;
     height: 41px;
-    background: url(image/blue-box.png) -19px -24px no-repeat;
+    background: url(../image/image_game_03/blue-box.png) -19px -24px no-repeat;
 
 }
 .pink-box {
@@ -124,7 +134,7 @@ body .card-content {
     top: 30px;
     width: 44px;
     height: 41px;
-    background: url(image/pink-box.png) -19px -24px no-repeat;
+    background: url(../image/image_game_03/pink-box.png) -19px -24px no-repeat;
 
 }
 
@@ -133,5 +143,5 @@ body .card-content {
     top: 30px;
     width: 44px;
     height: 41px;
-    background: url(image/empty-box.png) -649px -23px no-repeat;
+    background: url(../image/image_game_03/empty-box.png) -649px -23px no-repeat;
 }

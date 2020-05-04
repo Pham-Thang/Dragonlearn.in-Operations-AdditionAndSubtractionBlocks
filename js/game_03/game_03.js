@@ -9,7 +9,7 @@ function chooseResult(choose) {
 		addGreenBall();
 		screenNum++;
 		displayResult(true);
-		setTimeout(displayScreen(screenNum), 3000);
+		setTimeout(displayScreen(screenNum), 0);
 	}
 	else{
 		subGreenBall();

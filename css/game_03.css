@@ -56,6 +56,16 @@ body .uchiru-head-card {
     position: relative;
 }
 
+.ball {
+    width: 21px;
+    height: 21px;
+    border-radius: 10px;
+    background-image: url(../image/image_game_03/greenball.png);
+    display: block;
+    float: left;
+}
+
+
 body .card-content {
     padding: 4px 0;
 }
@@ -88,6 +98,8 @@ body .card-content {
     margin: 46px 0 30px;
 }
 
+
+
 .plate {
     position: relative;
     display: inline-block;
@@ -97,4 +109,29 @@ body .card-content {
     border-radius: 10px;
     background-image: linear-gradient(-180deg,#f8f8f8 0,#e8e8e8 100%);
     box-shadow: 0 1px 2px 0 rgba(42,7,7,.36), 0 2px 4px 0 rgba(55,12,12,.18), 0 2px 12px 0 rgba(0,0,0,.15);
+}
+
+.blue-box{
+    position: absolute;
+    top: 30px;
+    width: 44px;
+    height: 41px;
+    background: url(image/blue-box.png) -19px -24px no-repeat;
+
+}
+.pink-box {
+    position: absolute;
+    top: 30px;
+    width: 44px;
+    height: 41px;
+    background: url(image/pink-box.png) -19px -24px no-repeat;
+
+}
+
+.empty-box {
+    position: absolute;
+    top: 30px;
+    width: 44px;
+    height: 41px;
+    background: url(image/empty-box.png) -649px -23px no-repeat;
 }

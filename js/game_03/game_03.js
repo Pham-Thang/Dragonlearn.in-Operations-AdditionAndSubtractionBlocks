@@ -1,4 +1,5 @@
-var screenNum = 0;
+var screenNum = 0; // man choi hien tai
+var screenCur = 0; // man choi khi tru diem
 
 displayScreen(screenNum);
 
@@ -6,17 +7,22 @@ function chooseResult(choose) {
 	
 	if(choose == screen[screenNum].choose) {
 		// true
-		addGreenBall();
-		screenNum++;
+		addGreenBall(screenCur);
+		screenCur++;
+		screenNum = screenCur;
 		displayResult(true);
 		setTimeout(displayScreen(screenNum), 0);
 	}
 	else{
-		subGreenBall();
-		if(screenNum > 0){
-			screenNum--;
+
+		if(screenCur > 1){
+			
+			screenCur--;
+			subGreenBall(screenCur);
+			screenCur--;
 		}
 		displayResult(false);
 	}
+	console.log(screenCur);
 }
 

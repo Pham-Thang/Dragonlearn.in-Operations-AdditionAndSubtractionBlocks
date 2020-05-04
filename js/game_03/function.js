@@ -1,4 +1,6 @@
 var divPlate = document.getElementsByClassName("plate");
+var divBall= document.getElementsByClassName("ball");
+
 function addSpanBox(index, num, add, sub){
 	var l = 30;
 	var p = divPlate;
@@ -10,7 +12,6 @@ function addSpanBox(index, num, add, sub){
 
 		l = l + 34;
 		if(l == 200) l = l + 5;
-		console.log(l);
 	}
 
 		for(var i = 0; i < add; i++){
@@ -39,10 +40,6 @@ function removeSpanBox() {
 	$("span").remove(".empty-box");
 }
 
-
-
-
-
 function displayScreen(num){
 	removeSpanBox();
 	document.getElementById('idexp').innerHTML = screen[num].trueExp;
@@ -50,16 +47,17 @@ function displayScreen(num){
 	for(var i = 0; i <= 3; i++){
 		addSpanBox(i, screen[num].exp[i].num,screen[num].exp[i].add, screen[num].exp[i].sub);
 	}
-	
-
 }
 
-function addGreenBall() {
 
+function addGreenBall(num) {
+	var index = 9 - num;
+	divBall[index].style.float = 'right';
 }
 
-function subGreenBall() {
-
+function subGreenBall(num) {
+	var index = 9 - num;
+	divBall[index].style.float = 'left';
 }
 
 function displayResult(trueR) {

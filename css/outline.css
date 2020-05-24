@@ -2,10 +2,60 @@ body {
 	text-align: center;
 }
 
-div {
-	margin-top: 500px;
-	padding-top: 300px;
-	height: 800px;
-	display: inline;
-	text-align: center;
+
+
+.card1 {
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../image/image_outline/game_01.png);
+
+	display: inline-block;
+	height: 152px;
+	width: 152px;
+	margin: 0 0 0 -1px;
+	 border: 4px solid #b0d2a8;
+    border-radius: 10px;
+    box-shadow: 4px 5px 0px #fff;
 }
+
+.card2 {
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../image/image_outline/game_02.png);
+
+	display: inline-block;
+	height: 152px;
+	width: 152px;
+	margin: 0 7px 0 7px;
+	 border: 4px solid #b0d2a8;
+    border-radius: 10px;
+    box-shadow: 4px 5px 0px #fff;
+}
+
+.card3 {
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../image/image_outline/game_03.png);
+
+	display: inline-block;
+	height: 152px;
+	width: 152px;
+	margin: 0 0 0 -1px;
+	 border: 4px solid #b0d2a8;
+    border-radius: 10px;
+    box-shadow: 4px 5px 0px #fff;
+}
+
+.card {
+	margin-top: 50px;
+}
+
+h2 {
+	margin-top: 30px;
+	font-size: 20px;
+	font-family: 'Arial';
+}
+

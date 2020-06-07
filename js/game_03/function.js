@@ -60,7 +60,32 @@ function subGreenBall(num) {
 	divBall[index].style.float = 'left';
 }
 
-function displayResult(trueR) {
+function displayResult(choose, trueR) {
+	var plate = document.getElementsByClassName('plate');
+	choose = parseInt(choose);
 
+	if(trueR){
+
+		plate[choose].style.boxShadow = '0 0 14px 0 #79cf19, 0 1px 2px 0 rgba(42, 7 , 7, .36), 0 0 4px 0 #3e7300'; //hien xanh
+		setTimeout(function(){
+			plate[choose].style.boxShadow = 
+			'0 1px 2px 0 rgba(42,7,7,.36), 0 2px 4px 0 rgba(55,12,12,.18), 0 2px 12px 0 rgba(0,0,0,.15)';
+		}, 300);
+		
+	}
+	else{
+
+		plate[choose].style.boxShadow = '0 0 14px 0 #d70014, 0 1px 2px 0 rgba(42, 7 , 7, .36)'; //hien do
+		setTimeout(function(){
+			plate[choose].style.boxShadow = 
+			'0 1px 2px 0 rgba(42,7,7,.36), 0 2px 4px 0 rgba(55,12,12,.18), 0 2px 12px 0 rgba(0,0,0,.15)';
+		}, 300);
+
+	}
+	
+
+	
+	
+	
 }
 

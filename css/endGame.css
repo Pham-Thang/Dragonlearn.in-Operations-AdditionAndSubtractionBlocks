@@ -3,6 +3,16 @@ body {
 	text-align: center;
 }
 
+body {
+    display: block;
+    background-image:
+        url('../image/image_game_03/bg1.png'),
+        url('../image/image_game_03/bg3.png'),
+        url('../image/image_game_03/bg2.jpg');
+    background-repeat: repeat, repeat, repeat;
+    background-size: auto, auto, cover;
+}
+
 img {
     display: block;
     margin: 0 auto;
@@ -15,3 +25,8 @@ h2 {
     margin: 0 auto;
     margin-top: 20px;
 }
+
+
+
+
+

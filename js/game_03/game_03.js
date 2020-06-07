@@ -6,23 +6,26 @@ displayScreen(screenNum);
 function chooseResult(choose) {
 	
 	if(choose == screen[screenNum].choose) {
-		// true
+		displayResult(choose, true);
 		addGreenBall(screenCur);
 		screenCur++;
 		screenNum = screenCur;
-		displayResult(true);
-		setTimeout(displayScreen(screenNum), 0);
+		
+		setTimeout(displayScreen(screenNum), 2000);
+		
+		
 	}
 	else{
-
+		
+		displayResult(choose, false);
 		if(screenCur > 1){
 			
 			screenCur--;
 			subGreenBall(screenCur);
 			screenCur--;
 		}
-		displayResult(false);
+		
 	}
-	console.log(screenCur);
+	
 }
 
